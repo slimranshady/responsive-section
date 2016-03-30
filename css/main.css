@@ -38,7 +38,8 @@ p {
 }
 
 .img-flex {
-  width: 33.333%;
+  width: 47%;
+  float: left;
 }
 
 .section-icon {
