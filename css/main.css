@@ -11,7 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
 
-  font: normal 100%/1.3 Noto, sans-serif;
+  font: normal 100%/1.3 "Noto Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -20,35 +20,60 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
+  overflow: hidden;
 }
 
 section {
   background-color: #e5c30a;
-  padding: .5rem;
-  overflow: hidden;
 }
 
-section div h2 {
+.img-flex {
+  background-color: #e5c30a;
+  display: block;
+  width: 100%;
+  min-height: 11rem;
+}
+
+.section-letter {
+  float: left;
+  text-align: center;
+  padding-left: 1.5rem;
+}
+
+.section-icon {
+  float: right;
+  text-align: center;
+  padding-right: 1.5rem;
+}
+
+section h2 {
   margin: 0;
   font-size: 1.5rem;
 }
 
-section .section-body p {
+section div img {
+  width: 8.5rem;
   margin: 0;
-}
-
-.section-letter, .section-icon {
-  width: 47.5%;
-  float: left;
   display: block;
 }
 
-img
+.wrapper {
+  max-width: 45em;
+  margin: 0 auto;
+  padding-top: 1.5rem;
+}
+
+.section-body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+section p {
+  margin: 0;
+}
 
 @media only screen and (min-width: 25em) {
 
-  html {
+  section p, h2 {
     font-size: 100%;
     line-height: 1.3;
   }
@@ -57,7 +82,7 @@ img
 
 @media only screen and (min-width: 38em) {
 
-  html {
+  section p, h2 {
     font-size: 110%;
     line-height: 1.4;
   }
@@ -66,7 +91,7 @@ img
 
 @media only screen and (min-width: 60em) {
 
-  html {
+  section p, h2 {
     font-size: 120%;
     line-height: 1.5;
   }
@@ -75,7 +100,7 @@ img
 
 @media only screen and (min-width: 90em) {
 
-  html {
+  section p, h2 {
     font-size: 130%;
     line-height: 1.5;
   }
